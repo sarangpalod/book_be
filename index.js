@@ -35,17 +35,45 @@ const book = new mongoose.Schema({
     name: { 
         type: String, 
         require: true
-    }, 
-    address: { 
-        type: String, 
-        require: true
-    }, 
+    },
+    phone: Number, 
+
     email: { 
         type: String, 
         require: true
     },
-    contact_no: Number, 
-    car_model: { 
+    address: { 
+        type: String, 
+        require: true
+    },
+    state: { 
+        type: String, 
+        require: true
+    },
+     
+    pin: Number,
+    
+    modelName: { 
+        type: String, 
+        require: true
+    },
+    colorName: { 
+        type: String, 
+        require: true
+    },
+    wheels: { 
+        type: String, 
+        require: true
+    },
+    roof: { 
+        type: String, 
+        require: true
+    },
+    gear: { 
+        type: String, 
+        require: true
+    },
+    date: { 
         type: String, 
         require: true
     }
@@ -58,21 +86,34 @@ const test_drive = new mongoose.Schema({
     name: { 
         type: String, 
         require: true
-    }, 
-    address: { 
-        type: String, 
-        require: true
-    }, 
+    },
+    phone: Number, 
+
     email: { 
         type: String, 
         require: true
     },
-    contact_no: Number, 
+    address: { 
+        type: String, 
+        require: true
+    },
+    state: { 
+        type: String, 
+        require: true
+    },
+     
+    pin: Number,
     car_model: { 
+        type: String, 
+        require: true
+    },
+    date: { 
         type: String, 
         require: true
     }
 })
+
+
 
 const TestDrive = mongoose.model("TestDrive" ,test_drive );
 
